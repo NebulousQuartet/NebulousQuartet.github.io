@@ -206,7 +206,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: rgba(136, 26, 146, 0.949);
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -248,7 +248,7 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    background: linear-gradient(rgba(136, 26, 146, 0.949), rgba(9, 5, 31, 0.949));
+    background: linear-gradient(115deg, rgba(136, 26, 146, 0.949), rgb(1, 1, 1, 255), rgb(1, 1, 1, 255));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,12 +261,21 @@ a:focus {
 .hero .hero-image {
     position: relative;
     text-align: right;
-    padding-right: 75px;
 }
+
+.block {
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	box-shadow: inset 0px 0px 70px 70px rgba(1,1,1,255);
+}
+
 
 .hero .hero-image img {
     max-width: 100%;
     max-height: 100%;
+    
 }
 
 .hero .hero-content {
@@ -1311,7 +1320,7 @@ a:focus {
 }
 
 .contact .container-fluid {
-    background: url(../img/Group-3.PNG) left center no-repeat;
+    background: url(../img/Group-4.jpg) left center no-repeat;
     background-size: contain;
 }
 
