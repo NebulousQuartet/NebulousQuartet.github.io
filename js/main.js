@@ -104,6 +104,28 @@
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    var popupForm = document.querySelector("form");
+    var popupButton = popupForm.querySelector("button");
+     popupButton.addEventListener('click', function (e) {
+          e.preventDefault();
+          var popupEmail = popupForm.querySelector("#email").value;
+          var popupName = popupForm.querySelector("#first_name").value;
+
+          var event_data = {
+               event_name: "popup_sent",
+               email: popupEmail,
+               name: popupName
+               }
+
+          window.top.UE.pageHit({'apiKey':put_api_key_of_your_app_here,
+               'email': popupEmail,
+               'name': popupName,
+               'event': event_data
+               });  
+          document.getElementById('my_form').style.display = 'none';
+          document.getElementById('thank_you').style.display = 'block';
+     });
     
 })(jQuery);
 

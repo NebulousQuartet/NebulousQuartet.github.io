@@ -733,6 +733,16 @@ a:focus {
     }
 }
 
+#center {
+    width: 100%; 
+    height: 50%;
+    margin: auto; 
+    text-align: center;
+    
+    /* Optional Styling */
+    padding: 20px;
+   
+  }
 
 /*******************************/
 /********* Service CSS *********/
@@ -1097,6 +1107,15 @@ a:focus {
     border-color: rgba(136, 26, 146, 0.949);
 }
 
+.thankyou {
+    width: 800px; 
+  margin: auto; 
+  text-align: center;
+  
+  /* Optional Styling */
+  padding: 20px;
+
+}
 
 /*******************************/
 /*********** Team CSS **********/
@@ -1467,6 +1486,8 @@ a:focus {
 .blog .blog-meta p:last-child {
     margin: 0;
 }
+
+
 
 
 /*******************************/
